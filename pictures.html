@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Pictures</Title>
+    <link rel="stylesheet" href="pic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">BACK</a></li>
+                    </ul>
+                </nav>
+                <img src="pics/menu.png" class="menu-icon">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="text-box">
+                        <h3>PICTURES</h5>
+                        <h1>Because thats what make <b>memories</b> matter</h1>
+                    </div>
+                    <img src="pics/circle.png" class="small-icon1">
+                    <img src="pics/circle.png" class="small-icon2">
+                    <img src="pics/square.png" class="small-icon3">
+                </div>
+                <div class="col">
+                    <div class="gallery-box">
+                        <img src="picture/1.jpg" id="gallery">
+                        <ul>
+                            <li class="btn active">01</li>
+                            <li class="btn">02</li>
+                            <li class="btn">03</li>
+                            <li class="btn">04</li>
+                            <li class="btn">05</li>
+                            <li class="btn">06</li>
+                            <li class="btn">07</li>
+                            <li class="btn">08</li>
+                            <li class="btn">09</li>
+                            <li class="btn">10</li>
+                            <li class="btn">11</li>
+                            <li class="btn">12</li>
+                            <li class="btn">13</li>
+                            <li class="btn">14</li>
+                            <li class="btn">15</li>
+                            <li class="btn">16</li>
+                            <li class="btn">17</li>
+                            <li class="btn">18</li>
+                            <li class="btn">19</li>
+                            <li class="btn">20</li>
+                            <li class="btn">21</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <img src="pics/circle.png" class="small-icon4">
+            <img src="pics/square.png" class="small-icon5">
+        </div>
+
+        <script>
+            var btn = document.getElementsByClassName("btn")
+            var gallery = document.getElementById("gallery")
+
+            var picture = new Array(
+                "picture/1.jpg",
+                "picture/2.jpg",
+                "picture/3.jpg",
+                "picture/4.jpg",
+                "picture/5.jpg",
+                "picture/6.jpg",
+                "picture/7.jpg",
+                "picture/8.jpg",
+                "picture/9.jpg",
+                "picture/10.jpg",
+                "picture/11.jpg",
+                "picture/12.jpg",
+                "picture/13.jpg",
+                "picture/14.jpg",
+                "picture/15.jpg",
+                "picture/16.jpg",
+                "picture/17.jpg",
+                "picture/18.jpg",
+                "picture/19.jpg",
+                "picture/20.jpg",
+                "picture/21.jpg"
+            );
+
+            for(let i=0; i<btn.length; i++){
+                btn[i].onclick = function(){
+                    gallery.src = picture[i];
+                    let current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace("active","");
+                    this.className += " active ";
+                };
+            }
+        </script>
+    </body>
+</html>

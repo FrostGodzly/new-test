@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>PROJECT</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                  <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                  </div>
+          
+                  <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                  </div>
+                </div>
+          
+                <div class="right-side">
+                  <div class="brand">
+                    TIZ US YOO
+                  </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+              <div class="items-wrapper">
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/anas.jpg);"></div>
+
+                  <div class="img-text-wrapper1">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">ANAS PARAKANDY</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/anisha.jpg);"></div>
+                  <div class="img-text-wrapper2">
+                    <div class="logo-wrapper">
+
+                      <div class="subtitles">ANISHA UPADHYAY</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/aryaman.jpg);"></div>
+                  <div class="img-text-wrapper3">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">ARYAMAN ARUKH</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/devjani.jpg);"></div>
+                  <div class="img-text-wrapper4">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">DEVJANI DHAR</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/joshua.jpg);"></div>
+                  <div class="img-text-wrapper5">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">JOSHUA JOSEPH JOHNSON</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/rithik.jpg);"></div>
+                  <div class="img-text-wrapper6">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">RITHIK SHEKAR</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/w.jpg);"></div>
+                  <div class="img-text-wrapper7">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">THIS IS THE WORLD'S MOST ANNOYING BUNCH OF PEOPLE.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/athul.jpg);"></div>
+                  <div class="img-text-wrapper8">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">ATHUL DEV</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-wrapper">
+                  <div class="img-wrapper" style="background-image: url(images/wh.jpg);"></div>
+                  <div class="img-text-wrapper9">
+                    <div class="logo-wrapper">
+                      <div class="subtitles">BUT THATS WHERE THE FUN IS.! <h1>THIS IS US.!</h1></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+      const Items = document.querySelectorAll('.item-wrapper')
+      Items.forEach(Items => {
+        Items.addEventListener('mouseover',() => {
+          console.log(Items.childNodes[1].classList);
+          Items.childNodes[1].classList.add('img-blur');
+        })
+
+        Items.addEventListener('mouseout',() => {
+          console.log(Items.childNodes[1].classList);
+          Items.childNodes[1].classList.remove('img-blur');
+        })
+      })
+    </script>
+</html>
